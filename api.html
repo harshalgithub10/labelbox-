@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labelbox SDK Example</title>
+    <script src="https://unpkg.com/@labelbox/javascript/dist/labelbox.min.js"></script>
+</head>
+<body>
+    <script>
+        // Initialize Labelbox client with your API key
+        const labelbox = new Labelbox({
+            apiKey: 'Labelbox-Access-Key'
+        });
+
+        // Use Labelbox SDK methods here
+        // For example:
+        labelbox.projects.list().then(projects => {
+            console.log('Projects:', projects);
+        });
+    </script>
+</body>
+</html>
+
